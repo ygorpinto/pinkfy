@@ -1,5 +1,5 @@
 import { ContainerStyles } from "./ContainerStyles"
-import { PlayContainer } from "./playContainer"
+import { PlayContainer } from "../PlayContainer/PlayContainer"
 
 export const Container = () => {
     return (

@@ -1,5 +1,5 @@
 import { ThemeProvider } from "styled-components";
-import { Container } from "../components/Container";
+import { Container } from "../components/Container/Container";
 import { GlobalStyles } from "../styles/global";
 import light from '../styles/lightTheme'
 
