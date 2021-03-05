@@ -10,24 +10,30 @@ export const HomePage = () => {
 const [ session, loading ] = useSession()
   if(session) {
     return <>
+    <ThemeProvider theme={light}>
     <HomePageStyles>
     <div className="signOut">
-      Signed in as {session.user.email} <br/>
+      <div className="user">
+      Signed in as {session.user.name} <br/>
+      <img src={session.user.image}></img>
+      </div>
       <button onClick={() => signOut()}>Sign out</button>
       </div>
-      <ThemeProvider theme={light}>
         <GlobalStyles/>
         <Container/>
-    </ThemeProvider>
     </HomePageStyles>
+    </ThemeProvider>
     </>
   }
   return <>
+    <ThemeProvider theme={light}>
     <HomePageStyles>
     <div className="signIn">
-    Not signed in <br/>
-    <button onClick={() => signIn()}>Sign in</button>
+      <h1>Pinkfy.</h1>
+    <p>Entre com sua conta Spotify</p>
+    <button onClick={() => signIn()}>Entrar</button>
     </div>
     </HomePageStyles>
+    </ThemeProvider>
   </>
 }

@@ -14,10 +14,14 @@ background-color:${props=>props.theme.colors.background};
     align-items:center;
     justify-content:center;
     background-color:${props=>props.theme.colors.primary};
-    height:60vh;
+    height:70vh;
     width:16rem;
     border-radius:1rem;
-    box-shadow:3px 3px rgba(0,0,0,0.15)
+    box-shadow:3px 3px rgba(0,0,0,0.15);
+
+    @media screen and (max-width:500px){
+        height:90vh;
+    }
 }
 
 .HeaderApp {
@@ -40,6 +44,10 @@ background-color:${props=>props.theme.colors.background};
     ::placeholder {
         text-align:center;
     }
+
+    @media screen and (max-width:400px){
+        height:1.5rem;
+    }
 }
 
 .HeaderApp h1 {
@@ -48,7 +56,11 @@ background-color:${props=>props.theme.colors.background};
     font-size:3.4rem;
     font-weight:100;
     letter-spacing:4px;
-    color:${props=>props.theme.colors.background}
+    color:${props=>props.theme.colors.background};
+
+    @media screen and (max-width:400px){
+        font-size:3.4rem;
+    }
 }
 
 .musicContainer {
