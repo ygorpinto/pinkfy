@@ -42,11 +42,20 @@ export const HomePageStyles = styled.div`
         border-radius:50%;
     }
 
-    @media screen and (max-width:400px){
+    @media screen and (max-width:450px){
         font-size:0.6rem;
 
         button {
             font-size:0.6rem;
+        }
+    }
+
+    @media screen and (max-width:450px){
+        font-size:0.5rem;
+
+        button {
+            width:3rem;
+            font-size:0.5rem;
         }
     }
 }

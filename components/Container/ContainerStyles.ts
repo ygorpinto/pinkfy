@@ -14,13 +14,14 @@ background-color:${props=>props.theme.colors.background};
     align-items:center;
     justify-content:center;
     background-color:${props=>props.theme.colors.primary};
-    height:70vh;
-    width:16rem;
+    height:85vh;
+    width:80%;
     border-radius:1rem;
     box-shadow:3px 3px rgba(0,0,0,0.15);
 
     @media screen and (max-width:500px){
         height:90vh;
+        width:16rem;
     }
 }
 
@@ -64,7 +65,6 @@ background-color:${props=>props.theme.colors.background};
 }
 
 .musicContainer {
-    margin-bottom:1rem;
     display:flex;
     flex-direction:column;
     justify-content:center;
