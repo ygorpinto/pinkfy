@@ -1,15 +1,10 @@
-import { ThemeProvider } from "styled-components";
-import { Container } from "../components/Container/Container";
-import { GlobalStyles } from "../styles/global";
-import light from '../styles/lightTheme'
+import { HomePage } from "../components/Home/HomePage";
 
 export default function Home() {
-  return (
-    <>
-    <ThemeProvider theme={light}>
-    <GlobalStyles/>
-    <Container/>
-    </ThemeProvider>
-    </>
+
+  return(
+    <HomePage/>
   )
+  
 }
+
