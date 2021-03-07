@@ -10,6 +10,7 @@ export const HomePage = () => {
 const [ session, loading ] = useSession()
   if(session) {
     return <>
+    <GlobalStyles/>
     <ThemeProvider theme={light}>
     <HomePageStyles>
     <div className="signOut">
@@ -19,13 +20,13 @@ const [ session, loading ] = useSession()
       </div>
       <button onClick={() => signOut()}>Sign out</button>
       </div>
-        <GlobalStyles/>
         <Container/>
     </HomePageStyles>
     </ThemeProvider>
     </>
   }
   return <>
+  <GlobalStyles/>
     <ThemeProvider theme={light}>
     <HomePageStyles>
     <div className="signIn">
